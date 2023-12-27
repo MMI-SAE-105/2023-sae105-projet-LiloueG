@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body id="body">
+    <header class="header">
+        <nav class="header__nav"> x-show="menuOpen" x-transition.duration.600ms.origin.right
+            <img class="header__nav--logo" src="" alt="Logo">
+            <button class="header__nav--btn" @click="menuOpen = ! menuOpen">
+                <img src="" alt="menu">
+            </button>
+            <div>
+                <ul class="header__nav--list">
+                    <li class="header__nav--list-item"><a href="#">Filmographie du réalisateur</a></li>
+                    <li class="header__nav--list-item"><a href="#">Autres livres de l'auteur</a></li>
+                    <li class="header__nav--list-item"><a href="#">Glossaire</a></li>
+                    <li class="header__nav--list-item"><a href="#">Autres projets</a></li>
+                    <li class="header__nav--list-item"><a href="#">A propos</a></li>
+                    <li class="header__nav--list-item"><a href="#">Contact</a></li>
+                </ul>
+                <button>
+                     FR
+                </button>
+                <button>
+                    EN
+                </button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        
+    </main>
+</body>
+</html>
