@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Home</title>
+        <title>Glossary</title>
         <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     </head>
     <body id="body">
@@ -21,35 +21,45 @@
                 <img class="header__nav--logo" src="" alt="Logo">
                 <div>
                     <ul class="header__nav--list">
-                        <li class="header__nav--list-item"><a href="#">Filmography of director</a></li>
-                        <li class="header__nav--list-item"><a href="#">Other books by the author</a></li>
-                        <li class="header__nav--list-item"><a href="#">Glossary</a></li>
-                        <li class="header__nav--list-item"><a href="#">Other projects</a></li>
-                        <li class="header__nav--list-item"><a href="#">About us</a></li>
-                        <li class="header__nav--list-item"><a href="#">Contact</a></li>
+                        <li class="header__nav--list-item"><a href="/en/filmography.html">Filmography of director</a></li>
+                        <li class="header__nav--list-item"><a href="/en/others-books.html">Other books by the author</a></li>
+                        <li class="header__nav--list-item"><a href="/en/glossary.html">Glossary</a></li>
+                        <li class="header__nav--list-item"><a href="/en/others-projects.html">Other projects</a></li>
+                        <li class="header__nav--list-item"><a href="/en/about-us.html">About us</a></li>
+                        <li class="header__nav--list-item"><a href="/en/contact.html">Contact</a></li>
                     </ul>
-                    <button>
+                    <a class="header__nav--lien" href="/index.html">
                         FR
-                    </button>
-                    <button>
+                    </a>
+                    <a class="header__nav--lien" href="/en/home.html">
                         EN
-                    </button>
+                    </a>
                 </div>
             </nav>
         </header>
         <main>
-            <p>
-                Blockbuster  : Big-budget film released with a major advertising campaign.
-            </p>
-            <p>
-                Dystopia: a story about a bleak utopian future.
-            </p>
-            <p>
-                Immunes: people immune to the virus
-            </p>
-            <p>
-                WICKED (World In Catastrophe: Killzone Experiment Department): Secret organization created to find a cure for the Ember virus.
-            </p>
+            <section class="section">
+                <div class="section__container">
+                    <div class="section__container--text">
+                        <h1 class="section__container--text-title">
+                            Glossary
+                        </h1>
+                        <img src="/public/img/image presentation/lettre.webp" alt="">
+                        <p class="section__container--paragraph">
+                            Blockbuster  : Big-budget film released with a major advertising campaign.
+                        </p>
+                        <p class="section__container--paragraph">
+                            Dystopia: a story about a bleak utopian future.
+                        </p>
+                        <p class="section__container--paragraph">
+                            Immunes: people immune to the virus
+                        </p>
+                        <p class="section__container--paragraph">
+                            WICKED (World In Catastrophe: Killzone Experiment Department): Secret organization created to find a cure for the Ember virus.
+                        </p>
+                    </div>
+                </div>
+            </section>
         </main>
         <footer class="footer">
             <img src="" alt="Logo">
