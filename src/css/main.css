@@ -11,7 +11,7 @@ iframe {
 
 .header {
     position: absolute;
-    width: 100%
+    width: 100%;
 }
 
 .header__top {
@@ -73,6 +73,7 @@ header img {
 .section__container--text {
     display: flex;
     justify-content: center;
+    margin-bottom: 20px;
 }
 
 .section__wrap {

@@ -1,0 +1,41 @@
+.frise {
+    position: relative;
+    border-left: 3px solid #000000;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 45px;
+    margin: 35px 20px;
+    padding: 40px 0 40px 25px;
+}
+.frise::before {
+    content: url("../../public/icone/chevron_bas.svg");
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: -12.8px;
+    bottom: -8px;
+}
+.frise img {
+    width: 20%;
+}
+
+.frise__article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.frise__article::before {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border-radius: 100px;
+    left: -8px;
+    background: #000000;
+}
+
+.frise__paragraph {
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Bruno Ace', sans-serif;
+}
