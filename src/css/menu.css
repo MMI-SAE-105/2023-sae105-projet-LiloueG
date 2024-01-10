@@ -1,0 +1,63 @@
+.header__nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #094382;
+    z-index: 1000;
+}
+
+.header__logo {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.header__logo img{
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    width: 35px;
+    height: 44px;
+}
+
+.header__cross {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    justify-content: right;
+}
+
+.header__nav--lien {
+    display: flex;
+    padding: 0 30px;
+    margin: 120px 0;
+}
+
+.header__nav--list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    list-style: none;
+
+}
+
+.header__nav a {
+    color : #fff;
+    text-decoration: none;  
+}
+
+.header__nav a {
+    font-family: 'Bruno Ace', sans-serif;
+    font-size: 20px;
+}
+
+.header__nav--btn {
+    display: flex;
+    margin: 20px;
+}
+
+.noscroll body {
+    overflow: hidden;
+}

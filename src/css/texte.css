@@ -1,0 +1,22 @@
+.section__wrap h2 {
+    font-family: 'Bruno Ace', sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+.section__wrap h3 {
+    font-family: 'Bruno Ace', sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+}
+
+.section__wrap p {
+    margin-bottom: 20px;
+}
+
+.section__wrap a {
+    font-family: 'Bruno Ace', sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    text-decoration: none;
+}
