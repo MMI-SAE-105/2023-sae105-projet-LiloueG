@@ -1,19 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"  x-data="{menuIsOpen: false}">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Contact</title>
         <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+        <link rel="stylesheet" href="/src/css/style.css">
     </head>
     <body id="body">
         <header class="header">
-            <a href="index.html">
-                <img class="header--logo" src="/public/icone/Logo.webp" alt="Logo">
-            </a>
-            <p class="header--paragraph">
-                Future in yours hands
-            </p>
+            <div class="header__top">
+                <a href="index.html">
+                    <img class="header--logo" src="/public/icone/Logo.webp" alt="Logo">
+                </a>
+                <p class="header--paragraph">
+                    Future in yours hands
+                </p>
+                <img src="/public/icone/menu-burger.webp" alt="Menu"  @click="menuIsOpen = !menuIsOpen">
+            </div>
             <nav class="header__nav" x-show="menuOpen" x-transition.duration.600ms.origin.right> 
                 <button class="header__nav--btn" @click="menuOpen = !menuOpen">
                     <img src="/public/icone/traverser.webp" alt="menu">
@@ -47,20 +51,24 @@
                         <img src="/public/img/image_presentation/contact.webp" alt="">
                         <form action="traitement.php" method="post">
                             <input type="text" placeholder="Last name" >
-                
-                            <input type="text" placeholder="First name">
-                            
-                            <input type="email" placeholder="E-mail">
-                
+
+                            <input type="text" placeholder="First name"> 
+
+                            <input type="email" placeholder="E-mail">    
+
                             <textarea name="message" id="message" placeholder="Message"></textarea>
-                
-                            <div class="form__input"><input type="submit" value="Send"></div>
+                        </form>
+                        <div class="form__input">
+                            <input type="submit" value="Send">
+                        </div>
                     </div>
                 </div>
             </section>
         </main>
         <footer class="footer">
-            <img src="/public/icone/Logo.webp" alt="Logo">
+            <a href="index.html" class="footer__logo">
+                <img src="/public/icone/Logo.webp" alt="Logo">
+            </a>
             <p>
                 Liloue GUYOT
             </p>
@@ -70,15 +78,20 @@
             <a href="">
                 liloue.guyot@edu.univ-fcomte.fr
             </a>
-            <img src="/public/icone/instagram.webp" alt="Instagram">
-            <img src="/public/icone/facebook.webp" alt="Facebook">
-            <img src="/public/icone/discord.webp" alt="Discord">
-            <p>
-                Legal notice
-            </p>
-            <p>
-                This site was created as part of a BUT MMI Montbéliard training project.
-            </p>
+            <div class="footer__reseaux">
+                <img src="/public/icone/instagram.webp" alt="Instagram">
+                <img src="/public/icone/facebook.webp" alt="Facebook">
+                <img src="/public/icone/discord.webp" alt="Discord">
+            </div>
+            
+            <div class="footer__paragraph">
+                <p>
+                    Legal notice
+                </p>
+                <p>
+                    This site was created as part of a BUT MMI Montbéliard training project.
+                </p>
+            </div>
         </footer>
     </body>
 </html> 

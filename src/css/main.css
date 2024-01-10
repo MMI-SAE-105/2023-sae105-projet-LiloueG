@@ -1,0 +1,164 @@
+body {
+    width: 100vw;
+    font-family: 'Exo', sans-serif;
+}
+
+iframe {
+    width: 100%;
+    height: 100vh;
+    border: none;
+}
+
+.header {
+    position: absolute;
+    width: 100%
+}
+
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.header__top a {
+    width: 33px;
+}
+
+.section__container--text-img {
+    display: block;
+    width: 100%;
+    height: 100vh;
+}
+
+header img {
+    width: 33px;
+}
+
+.header__img {
+    width: 33px;
+    height: 33px;
+    margin-top: 10px;
+}
+
+.header__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header--logo {
+    position: absolute;
+    
+}
+
+.header--paragraph {
+    font-size: 20px;
+    color: #ffffff;
+    
+}
+
+.section__container--text h1{
+    position: absolute;
+    width: 90%;
+    top : 30%;
+    color: white;
+    text-align: center;
+    font-family: 'Bruno Ace', sans-serif;
+    font-size: 45px;
+    font-weight: lighter;
+    align-items: center;
+}
+
+.section__container--text {
+    display: flex;
+    justify-content: center;
+}
+
+.section__wrap {
+    padding: 0 20px;
+}
+
+.section h2 {
+    font-size: 20px;
+    color: #000000;
+}
+
+.section p {
+    font-size: 12px;
+    color: #000000;
+}
+
+.section iframe {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10%;
+}
+
+.section__card {
+    display: flex;
+    flex-direction: column;
+}
+
+.section__card img {
+    width: 100%;
+}
+
+footer{
+    padding: 50px 0;
+    background-color: #094382;
+    color: #fff;
+    margin-top: 10%;
+    text-align: center;
+}
+
+.footer__logo{
+    display: flex;
+    justify-content: center;
+}
+
+.footer__logo img{
+    width: 32px;
+    height: 41px;
+    margin-bottom: 20px;
+}
+
+footer p{
+    font-size: 19px;
+    font-weight: regular;
+    margin: 20px;
+}
+
+.footer__a{
+    font-size: 19px;
+    font-weight: regular;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+
+footer a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer__reseaux{
+    display: flex;
+    gap: 20px;
+    margin: 20px;
+    justify-content: center
+}
+
+.footer__reseaux img{
+    width: 32px;
+    height: 32px;
+}
+
+.footer__paragraph p {
+    font-size: 12px;
+    color: #ffffff;
+    text-align: center;
+    margin: 20px;
+}

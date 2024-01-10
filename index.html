@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr"  x-data="{menuIsOpen: false}">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,12 +9,16 @@
     </head>
     <body>
         <header class="header">
-            <a href="index.html">
-                <img class="header--logo" src="/public/icone/Logo.webp" alt="Logo">
-            </a>
-            <p class="header--paragraph">
-                Future in yours hands
-            </p>
+            <div class="header__top">
+                <a class="header--link" href="index.html">
+                    <img class="header--logo" src="/public/icone/Logo.webp" alt="Logo">
+                </a>
+                <p class="header--paragraph">
+                    Future in yours hands
+                </p>
+                <img class="header__img" src="/public/icone/menu-burger.webp" alt="Menu"  @click="menuIsOpen = !menuIsOpen">
+            </div>
+                        
             <nav class="header__nav" x-show="menuOpen" x-transition.duration.600ms.origin.right> 
                 <div @click="menuOpen = !menuOpen">
                     <img src="/public/icone/traverser.webp" alt="menu">
@@ -45,58 +49,68 @@
                         <h1 class="section__container--text-title">
                             “Ton avenir est entre tes mains”
                         </h1>
-                        <img src="/public/img/image_presentation/wicked.webp" alt="Affiche">
+                        <img class="section__container--text-img" src="/public/img/image_presentation/wicked.webp" alt="Affiche">
                     </div>
-                    <h2 class="section__container--text">
-                        Découvrez le monde intense et captivant du film 'Le Labyrinthe : Le Remède Mortel', le dernier opus de la saga à succès, réalisé par Wes Ball. 
-                    </h2>
-                    <p class="section__container--paragraph">
-                        Explorez l'univers épique de Thomas et ses amis tout en plongeant dans la mélodie envoûtante de 'Please Tommy Please', composée par l'artiste talentueux John Paesano. 
-
-                        Rejoignez-nous pour une exploration cinématographique inoubliable, où l'action, l'aventure et la musique fusionnent pour créer une expérience unique.
-                    </p>
-                    <p class="section__container--paragraph">
-                        Bande-annonce final
-                    </p>
-                    <iframe src="https://www.youtube.com/embed/rMtuaKJQJYI?si=U3Eb_ZWqreCardhy" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    <a href="/fr/replique.html" class="section__container--img">
-                        <img src="/public/img/card/la_replique.webp" alt="">
-                    </a>
-                    <a href="#" class="section__container--img">
-                        <img src="/public/img/card/le_film.webp" alt="">
-                    </a>
-                    <a href="#" class="section__container--img">
-                        <img src="/public/img/card/le_livre.webp" alt="">
-                    </a>
-                    <a href="#" class="section__container--img">
-                        <img src="/public/img/card/la_musique.webp" alt="">
-                    </a>
-                    <a href="#" class="section__container--img">
-                        <img src="/public/img/card/le_realisateur.webp" alt="">
-                    </a>
+                    <div class="section__wrap">
+                        <h2 class="section__container--text">
+                            Découvrez le monde intense et captivant du film 'Le Labyrinthe : Le Remède Mortel', le dernier opus de la saga à succès, réalisé par Wes Ball.
+                        </h2>
+                        <p class="section__container--paragraph">
+                            Explorez l'univers épique de Thomas et ses amis tout en plongeant dans la mélodie envoûtante de 'Please Tommy Please', composée par l'artiste talentueux John Paesano.
+                            Rejoignez-nous pour une exploration cinématographique inoubliable, où l'action, l'aventure et la musique fusionnent pour créer une expérience unique.
+                        </p>
+                        <p class="section__container--paragraph">
+                            Bande-annonce final
+                        </p>
+                        <iframe src="https://www.youtube.com/embed/rMtuaKJQJYI?si=U3Eb_ZWqreCardhy" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        
+                        <div class="section__card">
+                            <a href="/fr/replique.html" class="section__container--img">
+                                <img src="/public/img/card/la_replique.webp" alt="">
+                            </a>
+                            <a href="#" class="section__container--img">
+                                <img src="/public/img/card/le_film.webp" alt="">
+                            </a>
+                            <a href="#" class="section__container--img">
+                                <img src="/public/img/card/le_livre.webp" alt="">
+                            </a>
+                            <a href="#" class="section__container--img">
+                                <img src="/public/img/card/la_musique.webp" alt="">
+                            </a>
+                            <a href="#" class="section__container--img">
+                                <img src="/public/img/card/le_realisateur.webp" alt="">
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>
         <footer class="footer">
-            <img src="/public/icone/Logo.webp" alt="Logo">
+            <a href="index.html" class="footer__logo">
+                <img src="/public/icone/Logo.webp" alt="Logo">
+            </a>
             <p>
                 Liloue GUYOT
             </p>
             <p>
                 MMI1 B2
             </p>
-            <a href="">
+            <a class="footer__a" href="mailto:liloue.guyot@edu.univ-fcomte.fr">
                 liloue.guyot@edu.univ-fcomte.fr
             </a>
-            <img src="/public/icone/instagram.webp" alt="Instagram">
-            <img src="/public/icone/facebook.webp" alt="Facebook">
-            <img src="/public/icone/discord.webp" alt="Discord">
-            <p>
-                Mention légale 
-            </p>
-            <p>
-                Ce site a été réalisé dans le cadre d’un projet de la formation du BUT MMI Montbéliard 
-            </p>
+            <div class="footer__reseaux">
+                <img src="/public/icone/instagram.webp" alt="Instagram">
+                <img src="/public/icone/facebook.webp" alt="Facebook">
+                <img src="/public/icone/discord.webp" alt="Discord">
+            </div>
+            <div class="footer__paragraph">
+                <p>
+                    Mention légale
+                </p>
+                <p>
+                    Ce site a été réalisé dans le cadre d’un projet de la formation du BUT MMI Montbéliard
+                </p>
+            </div>
         </footer>
     </body>
 </html>
